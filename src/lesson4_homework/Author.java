@@ -51,6 +51,16 @@ public class Author {
         this.author_id = author_id;
     }
 
+    @Override
+    public String toString() {
+        return "Author{" +
+                "author_id=" + author_id +
+                ", familyName='" + familyName + '\'' +
+                ", name='" + name + '\'' +
+                ", dateOfBorn=" + dateOfBorn +
+                '}';
+    }
+
 }
 
 

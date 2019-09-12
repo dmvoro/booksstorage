@@ -5,10 +5,36 @@ public class Storage {
     public static Book[] storageBooks = new Book[CAPACITY];
     public static int bookIndex = 0;
 
-    public static void IncreaseBookIndex(){
+    public static void increaseBookIndex(){
         bookIndex++;
     }
 
     public static Author[] bookAuthors = new Author[CAPACITY];
-    public static int
+    public static int authorIndex = 0;
+
+    public static void increaseAuthorIndex(){
+        authorIndex = authorIndex + 1;
+    }
+
+    public static void increaseAuthorsStorage() {
+        Author[] authors = new Author[authorIndex + CAPACITY];
+        for(int i = 0; i < Storage.bookAuthors.length; i++){
+            authors[i] = Storage.bookAuthors[i];
+        }
+
+        Storage.bookAuthors = authors;
+    }
+
+    public static void addAuthor(Author bookAuthor){
+        bookAuthor.setAuthor_id(System.currentTimeMillis());
+
+        if(authorIndex % (CAPACITY) == 0 && authorIndex != 0){
+            increaseAuthorsStorage();
+        } else {
+            bookAuthors[authorIndex] = bookAuthor;
+        }
+
+        Storage.increaseAuthorIndex();
+
+    }
 }

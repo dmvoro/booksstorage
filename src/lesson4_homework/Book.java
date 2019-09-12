@@ -35,7 +35,7 @@ public class Book {
         return bookBornYear;
     }
 
-    public void setBookBornYear(){
+    public void setBookBornYear(int bookBornYear){
         this.bookBornYear = bookBornYear;
     }
 
@@ -45,6 +45,17 @@ public class Book {
 
     public void setBookAuthors(Author[] bookAuthors){
         this.bookAuthors = bookAuthors;
+    }
+
+
+    @Override
+    public String toString() {
+        return "Book{" +
+                "bbokId=" + bookId +
+                ", bookName='" + bookName + '\'' +
+                ", bookBornYear=" + bookBornYear +
+                ", amountOfPages=" + amountOfPages +
+                '}';
     }
 }
 
