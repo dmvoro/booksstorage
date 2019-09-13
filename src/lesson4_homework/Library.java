@@ -1,4 +1,7 @@
 package lesson4_homework;
+import lesson4_homework.author.Author;
+import lesson4_homework.book.Book;
+
 import static lesson4_homework.Storage.*;
 
 public class Library {

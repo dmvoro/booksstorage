@@ -1,4 +1,6 @@
-package lesson4_homework;
+package lesson4_homework.author;
+
+import lesson4_homework.book.Book;
 
 public class Author {
     private String familyName;
@@ -50,6 +52,7 @@ public class Author {
     public void setAuthor_id(Long author_id){
         this.author_id = author_id;
     }
+
 
     @Override
     public String toString() {

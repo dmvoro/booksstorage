@@ -1,4 +1,6 @@
-package lesson4_homework;
+package lesson4_homework.book;
+
+import lesson4_homework.author.Author;
 
 public class Book {
     private Long bookId;

@@ -1,5 +1,9 @@
 package lesson4_homework;
 
+
+import lesson4_homework.author.Author;
+import lesson4_homework.book.Book;
+
 public class Storage {
     public static final int CAPACITY = 10;
     public static Book[] storageBooks = new Book[CAPACITY];

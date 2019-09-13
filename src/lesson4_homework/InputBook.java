@@ -4,6 +4,8 @@ public class InputBook {
     private String name;
     private int bookBornYear;
     private int amountOfPages;
+    private String paint;
+    private String fontFamily;
 
     public String getName() {
         return name;
@@ -27,5 +29,21 @@ public class InputBook {
 
     public void setAmountOfPages(int amountOfPages) {
         this.amountOfPages = amountOfPages;
+    }
+
+    public String getPaint() {
+        return paint;
+    }
+
+    public void setPaint(String paint) {
+        this.paint = paint;
+    }
+
+    public String getFontFamily() {
+        return fontFamily;
+    }
+
+    public void setFontFamily(String fontFamily) {
+        this.fontFamily = fontFamily;
     }
 }

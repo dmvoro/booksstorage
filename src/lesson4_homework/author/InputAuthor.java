@@ -1,4 +1,4 @@
-package lesson4_homework;
+package lesson4_homework.author;
 
 public class InputAuthor {
     private String familyName;
