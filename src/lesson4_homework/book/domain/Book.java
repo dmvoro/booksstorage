@@ -1,6 +1,6 @@
-package lesson4_homework.book;
+package lesson4_homework.book.domain;
 
-import lesson4_homework.author.Author;
+import lesson4_homework.author.domain.Author;
 
 public class Book {
     private Long bookId;

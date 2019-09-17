@@ -1,6 +1,6 @@
-package lesson4_homework.author;
+package lesson4_homework.author.domain;
 
-import lesson4_homework.book.Book;
+import lesson4_homework.book.domain.Book;
 
 public class Author {
     private String familyName;

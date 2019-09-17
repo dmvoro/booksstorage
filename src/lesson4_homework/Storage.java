@@ -1,8 +1,8 @@
 package lesson4_homework;
 
 
-import lesson4_homework.author.Author;
-import lesson4_homework.book.Book;
+import lesson4_homework.author.domain.Author;
+import lesson4_homework.book.domain.Book;
 
 public class Storage {
     public static final int CAPACITY = 10;
